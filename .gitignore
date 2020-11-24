@@ -23,7 +23,7 @@ const imageBackground = true
 const forceImageUpdate = false
 
 // Set the padding around each item. Default is 5.
-const padding = 1
+const padding = 2
 
 // Decide if icons should match the color of the text around them.
 const tintIcons = false
@@ -48,12 +48,9 @@ const items = [
   row,
      column,
      greeting,
-   
      date,
-     sunrise,
      battery,
      events,
-     space,
     
      column(90),
      current,
@@ -61,6 +58,7 @@ const items = [
     
    row,
      column,
+    
    
 ]
 
@@ -91,7 +89,7 @@ const dateSettings = {
 const eventSettings = {
 
   // How many events to show.
-  numberOfEvents: 0
+  numberOfEvents: 2
 
   // Show all-day events.
   ,showAllDay: true
@@ -175,17 +173,17 @@ const textFormat = {
   defaultText: { size: 5, color: "ffffff", font: "regular" },
   
   // Any blank values will use the default.
-  smallDate:   { size: 16, color: "", font: "light" },
+  smallDate:   { size: 14, color: "", font: "semibold" },
   largeDate1:  { size: 30, color: "", font: "" },
   largeDate2:  { size: 30, color: "", font: "" },
   
-  greeting:    { size: 20, color: "", font: "small" },
-  eventLabel:  { size: 30, color: "", font: "semibold" },
-  eventTitle:  { size: 14, color: "", font: "semibold" },
+  greeting:    { size: 15, color: "", font: "italic" },
+  eventLabel:  { size: 10, color: "", font: "italic" },
+  eventTitle:  { size: 10, color: "", font: "light" },
   eventTime:   { size: 14, color: "ffffffcc", font: "" },
   noEvents:    { size: 30, color: "", font: "semibold" },
   
-  largeTemp:   { size: 34, color: "", font: "" },
+  largeTemp:   { size: 25, color: "", font: "" },
   smallTemp:   { size: 14, color: "", font: "" },
   tinyTemp:    { size: 10, color: "", font: "light" },
   
